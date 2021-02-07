@@ -25,7 +25,7 @@ type application struct {
 func main() {
 	//Setting run with custom port
 	addr := flag.String("addr", ":4000", "HTTP network address")
-	dsn := flag.String("dsn", "postgres://web:pass@localhost:5432/snippetbox", "PostgreSQL data source name")
+	dsn := flag.String("dsn", "postgres://postgres:2002@localhost:5432/postgres", "PostgreSQL data source name")
 	secret := flag.String("secret", "s6Ndh+pPbnzHbS*+9Pk8qGWhTzbpa@ge", "Secret key")
 	flag.Parse()
 
